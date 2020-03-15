@@ -1,0 +1,39 @@
+$textcolor: rgb(255, 255, 255);
+$orangecolor: rgb(255, 152, 16);
+header{
+    background: #3c3f4e;
+    .container{
+        color: $orangecolor;
+        font-size:20px;
+        
+    }
+    .logo{
+       width: 70px;
+    }
+    li {
+        a{
+            color: $orangecolor;
+        }
+        text-decoration: none; 
+        color: $orangecolor;
+        margin: 0 30px;
+        display: inline;
+    }
+    .btn{
+        
+        // top: 40px;
+        right: 10%;
+        position: absolute;
+        color: white;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        background-image: linear-gradient(#42455a,#42455a),radial-gradient(circle at top left,#fd00da,#19d7f8);
+        background-origin: border-box;
+        background-clip: content-box,border-box;
+        span{
+            display: block;
+            padding: 8px 22px;
+
+        }
+    }
+}
