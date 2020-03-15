@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,MAAM,EAAE,SAAS,EAAE,KAAK;EAGpB,AAAA,OAAO,CAAC;IACJ,cAAc,EAAE,MAAM;IACtB,WAAW,EAAE,MAAM;GACtB;EAED,AAAA,KAAK,CAAC;IACF,MAAM,EAAE,CAAC;IACT,aAAa,EAAE,IAAI;GAKtB;EAPD,AAII,KAJC,AAIA,WAAW,CAAC;IACT,aAAa,EAAE,CAAC;GACnB",
+    "sources": [
+        "regulations.scss"
+    ],
+    "names": [],
+    "file": "regulations.css"
+}
