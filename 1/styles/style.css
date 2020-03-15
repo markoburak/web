@@ -23,6 +23,7 @@ header li a {
 }
 
 header .btn {
+  margin: 25px;
   right: 10%;
   position: absolute;
   color: white;
