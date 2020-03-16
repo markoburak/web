@@ -2,6 +2,10 @@ header {
   background: #3c3f4e;
 }
 
+header .cart img {
+  width: 50px;
+}
+
 header .container {
   color: #ff9810;
   font-size: 20px;

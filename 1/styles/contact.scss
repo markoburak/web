@@ -1,0 +1,103 @@
+$orangecolor: rgb(255, 152, 16);
+$bluecolor:hsl(233, 23%, 16%);
+@import "./head";
+@import "./regulations";
+
+@mixin flexCenter {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+
+body{
+    
+    background: $bluecolor !important;
+    #images{
+        .contact{
+
+            width: 140px;
+            position: absolute;
+            top: -70px;
+            left: calc(30%);   
+        }
+        
+        width: 360px;
+        height: 420px;
+        background: #000000;
+        color: #ffffff;
+        top: 50%;
+        left:50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+        ul{
+            .social1{
+                &:hover{
+                    background: hsl(229, 14%, 22%);
+                }           
+            }
+            
+            .social2{
+                &:hover{
+                    background: hsl(229, 14%, 22%);
+                }           
+            }
+            
+            .social3{
+                &:hover{
+                    background: hsl(229, 14%, 22%);
+                }           
+            }
+            font-size: 30px;
+            h3{
+                margin:10px 0 20px 0;
+                position: absolute;
+                color: $orangecolor;
+
+                &:hover{
+                    background: hsl(229, 14%, 22%);
+                    color: white;
+                }           
+            }
+            
+
+            img{
+                width: 60px;
+                margin: 30px 0px 0px 0;
+                position: relative;
+                top: -18px;
+                left: 38%;
+            }
+
+            color: $orangecolor;
+           
+        }   
+    }    
+
+}
+footer{
+	position: relative;
+    bottom: -600px;
+	background: black;
+	.images{
+		img{
+			width: 35px;
+			margin: 12px;
+			
+		}
+		@include flexCenter();
+		
+	}
+	.credits{
+		@include flexCenter();
+		color: rgb(255, 255, 255);
+	}
+}	
+
+
+    
+    
+    

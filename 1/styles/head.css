@@ -2,6 +2,18 @@ header {
   background: #3c3f4e;
 }
 
+header .cart {
+  width: 40px;
+  border-bottom: 1px solid #ff9810;
+  padding-left: -100px;
+  position: absolute;
+  left: 1%;
+}
+
+header .cart:hover {
+  background: #7a7a7a;
+}
+
 header .container {
   color: #ff9810;
   font-size: 20px;
