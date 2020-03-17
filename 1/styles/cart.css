@@ -58,7 +58,7 @@ header .btn span {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .inline1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -80,7 +80,7 @@ header .btn span {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .inline {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -147,7 +147,7 @@ body .products .inline1 .item .prod_img img {
   height: 370px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   body .products .inline1 .item {
     margin-top: 30px;
     position: absolute;
@@ -201,9 +201,9 @@ body .products .inline1 .forma_for_buy button {
   margin-top: 40px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   body .products .inline1 .forma_for_buy {
-    margin: 50px;
+    padding: 100px;
     position: absolute;
     top: 99%;
     left: 10%;
@@ -248,9 +248,9 @@ body #footer {
   background: black !important;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   body #footer {
-    bottom: -500px;
+    bottom: -800px;
   }
 }
 
