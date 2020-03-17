@@ -149,7 +149,7 @@ body .products .inline1 .item .prod_img img {
 
 @media (max-width: 700px) {
   body .products .inline1 .item {
-    margin-top: 30px;
+    margin-top: 60px;
     position: absolute;
     top: 20%;
     left: 3%;
@@ -203,7 +203,8 @@ body .products .inline1 .forma_for_buy button {
 
 @media (max-width: 700px) {
   body .products .inline1 .forma_for_buy {
-    padding: 100px;
+    margin-top: 200px;
+    margin-bottom: 180px;
     position: absolute;
     top: 99%;
     left: 10%;
