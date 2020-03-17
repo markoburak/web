@@ -52,6 +52,12 @@ header .btn span {
   padding: 8px 22px;
 }
 
+@media only screen and (min-width: 600px) {
+  .contactbox {
+    display: inline;
+  }
+}
+
 @media (max-width: 900px) {
   .inline {
     -webkit-box-orient: vertical;

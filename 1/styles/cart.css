@@ -68,8 +68,15 @@ header .btn span {
         -ms-flex-align: center;
             align-items: center;
   }
-  .forma_for_buy {
+  .inline1 .forma_for_buy {
     position: relative;
+  }
+  .inline1 .item {
+    border: 2px solid crimson;
+    position: relative;
+  }
+  .inline1 .item img {
+    width: 10%;
   }
 }
 
@@ -101,7 +108,7 @@ body .products {
   padding-bottom: 70px;
 }
 
-body .products .inline {
+body .products .inline1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,16 +116,16 @@ body .products .inline {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 40px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
 }
 
-body .products .inline:last-child {
+body .products .inline1:last-child {
   margin-bottom: 0;
 }
 
-body .products .inline .item {
+body .products .inline1 .item {
+  position: absolute;
+  left: 17%;
+  top: 20%;
   padding-top: 30px;
   padding-right: 20px;
   padding-bottom: 30px;
@@ -126,30 +133,128 @@ body .products .inline .item {
   border: 4px solid #ff9810;
 }
 
-body .products .inline .item h1 {
+body .products .inline1 .item h1 {
   color: white;
   font-family: 'Courier New', Courier, monospace;
 }
 
-body .products .inline .item p {
+body .products .inline1 .item p {
   color: #919191;
 }
 
-body .products .inline .item .prod_img img {
+body .products .inline1 .item .prod_img img {
   width: 300px;
   height: 370px;
 }
 
-body .products .inline .item button {
-  margin: 10px;
+@media (max-width: 900px) {
+  body .products .inline1 .item {
+    margin-top: 30px;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border: 4px solid #ff9810;
+  }
+  body .products .inline1 .item h1 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  body .products .inline1 .item p {
+    color: #919191;
+  }
+  body .products .inline1 .item .prod_img img {
+    width: 300px;
+    height: 370px;
+  }
 }
 
-footer {
+body .products .inline1 .forma_for_buy {
+  position: absolute;
+  left: 58%;
+  top: 20%;
+}
+
+body .products .inline1 .forma_for_buy h1 {
+  color: cornsilk;
+}
+
+body .products .inline1 .forma_for_buy input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+body .products .inline1 .forma_for_buy input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+body .products .inline1 .forma_for_buy button {
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  body .products .inline1 .forma_for_buy {
+    margin: 50px;
+    position: absolute;
+    top: 99%;
+    left: 10%;
+  }
+  body .products .inline1 .forma_for_buy h1 {
+    color: cornsilk;
+  }
+  body .products .inline1 .forma_for_buy input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  body .products .inline1 .forma_for_buy input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  body .products .inline1 .forma_for_buy button {
+    margin-top: 40px;
+  }
+}
+
+body #page-container {
   position: relative;
-  background: black;
+  min-height: 100vh;
 }
 
-footer .images {
+body #content-wrap {
+  padding-bottom: 2.5rem;
+  /* Footer height */
+}
+
+body #footer {
+  position: absolute;
+  bottom: -100px;
+  width: 100% !important;
+  height: 14%;
+  /* Footer height */
+  background: black !important;
+}
+
+@media (max-width: 900px) {
+  body #footer {
+    bottom: -500px;
+  }
+}
+
+body #footer .images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,12 +266,12 @@ footer .images {
           align-items: center;
 }
 
-footer .images img {
+body #footer .images img {
   width: 35px;
   margin: 12px;
 }
 
-footer .credits {
+body #footer .credits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,4 +283,4 @@ footer .credits {
           align-items: center;
   color: white;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=cart.css.map */
