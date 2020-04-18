@@ -1,0 +1,256 @@
+header {
+  background: #3c3f4e;
+}
+
+header .cart {
+  width: 40px;
+  border-bottom: 1px solid #ff9810;
+  padding-left: -100px;
+  position: absolute;
+  left: 1%;
+}
+
+header .cart:hover {
+  background: #7a7a7a;
+}
+
+header .container {
+  color: #ff9810;
+  font-size: 20px;
+}
+
+header .logo {
+  width: 70px;
+}
+
+header li {
+  text-decoration: none;
+  color: #ff9810;
+  margin: 0 30px;
+  display: inline;
+}
+
+header li a {
+  color: #ff9810;
+}
+
+header .btn {
+  margin: 25px;
+  right: 10%;
+  position: absolute;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#42455a), to(#42455a)), radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box,border-box;
+}
+
+header .btn span {
+  display: block;
+  padding: 8px 22px;
+}
+
+@media only screen and (min-width: 600px) {
+  .contactbox {
+    display: inline;
+  }
+}
+
+@media (max-width: 700px) {
+  .inline1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inline1 .forma_for_buy {
+    position: relative;
+  }
+  .inline1 .item {
+    border: 2px solid crimson;
+    position: relative;
+  }
+  .inline1 .item img {
+    width: 10%;
+  }
+}
+
+@media (max-width: 700px) {
+  .inline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .item {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+body {
+  background: #1f2232 !important;
+}
+
+body .loginbox {
+  width: 320px;
+  height: 420px;
+  background: #000000;
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+body .loginbox p {
+  margin: 0;
+  padding: 0;
+}
+
+body .loginbox h5 {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+body .loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+body .loginbox input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+ }
+
+body .loginbox input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+ }
+
+
+body .loginbox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #ff9810;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+body .loginbox input[type="submit"]:hover {
+  cursor: pointer;
+  background: #1f2232;
+  color: white;
+}
+
+body .loginbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: grey;
+}
+
+body .loginbox a:hover {
+  color: #ffc107;
+}
+
+body .loginbox p {
+  text-decoration: none;
+  background: #ffeded;
+  text-align: center;
+  margin-top: 40px;
+  color: #1f2232;
+}
+
+body .avatar {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  left: calc(35%);
+}
+
+body h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+body #page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+body #content-wrap {
+  padding-bottom: 2.5rem;
+  /* Footer height */
+}
+
+body #footer {
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  height: 14%;
+  /* Footer height */
+  background: black !important;
+}
+
+body #footer .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #footer .images img {
+  width: 35px;
+  margin: 12px;
+}
+
+body #footer .credits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+/*# sourceMappingURL=register.css.map */

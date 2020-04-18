@@ -1,0 +1,63 @@
+{% extends 'main/pages/wrapper2.html' %}
+
+{% block content%}
+	<header>
+
+		{% load static %}
+		<div class="container">
+			<ul>
+				<li><a href="../../../"><img src="{%static './images/laptoplogo.png' %}" class="logo"></a></li>
+					<li><a href="../../../"><b/>Home</a></li>
+					<li><a href="../../../login/"><b/>Login</a></li>
+					<li><a href="../../../contact/"><b/>Contact</a></li>
+					<li><a href="../../../signup/" class="btn"><span>Sign up</span></a></li>
+			</ul>
+		</div>
+	</header>
+	<body>
+
+		<div class="products">
+
+			<div class="inline1">
+				<div class="item">
+<!--					{{object1.good_name}}-->
+					<h1 id="name"></h1>
+<!--					{{object2.price_sell}}-->
+					<p id="price"></p>
+						<div class="prod_img">
+<!--							'/static{{object1.image}}'-->
+							<img id="img" src='' alt="no">
+						</div>
+
+				</div>
+				<div class="forma_for_buy">
+					<form action="">
+						<h1>Full Name</h1>
+						<input type="text" name="" placeholder="Full name">
+						<h1>Email</h1>
+						<input type="text" name="" placeholder="Enter Email">
+						<br>
+						<button type="button" class="btn btn-warning">buy</button>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer">
+
+			<div class="images">
+				<a href="https://t.me/Mark0_0"><img src="{%static './images/telegram.png' %}" alt=""></a>
+				<a href="https://www.facebook.com/profile.php?id=100008011452308"><img src="{%static './images/facebook.png' %}" alt=""></a>
+				<a href="https://www.instagram.com/0_0mark0_0/?hl=uk"><img src="{%static './images/insta.png' %}" alt=""></a>
+			</div>
+			<div class="credits">
+				<p>©Marko Burak</p>
+			</div>
+
+			</footer>
+
+	 <script type="module" src="/static/js/cart_id.js"></script>
+	</body>
+{% endblock %}

@@ -1,0 +1,54 @@
+header {
+  background: #3c3f4e;
+}
+
+header .cart {
+  width: 40px;
+  border-bottom: 1px solid #ff9810;
+  padding-left: -100px;
+  position: absolute;
+  left: 1%;
+}
+
+header .cart:hover {
+  background: #7a7a7a;
+}
+
+header .container {
+  color: #ff9810;
+  font-size: 20px;
+}
+
+header .logo {
+  width: 70px;
+}
+
+header li {
+  text-decoration: none;
+  color: #ff9810;
+  margin: 0 30px;
+  display: inline;
+}
+
+header li a {
+  color: #ff9810;
+}
+
+header .btn {
+  margin: 25px;
+  right: 10%;
+  position: absolute;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#42455a), to(#42455a)), radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box,border-box;
+}
+
+header .btn span {
+  display: block;
+  padding: 8px 22px;
+}
+/*# sourceMappingURL=head.css.map */

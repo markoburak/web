@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	{% load static %}
+	<link rel="stylesheet" href="{%static './styles/register.css' %}" type="text/css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<title>Internet store</title>
+</head>
+<header>
+	<div class="container">
+		<ul>
+				<li><a href="../"><img src="{%static './images/laptoplogo.png' %}" class="logo"></a></li>
+				<li><a href="../"><b/>Home</a></li>
+				<li><a href="../login"><b/>Login</a></li>
+				<li><a href="../contact"><b/>Contact</a></li>
+				
+		</ul>
+	</div>
+</header>
+<body>
+<div id="page-container">
+		<div id="content-wrap">
+				<div class="loginbox">
+						<img src="{%static './images/register.png' %}" class="avatar">
+						<h1>Register Here</h1>
+						<form action="">
+							<h5>Username</h5>
+							<input type="text" name="" placeholder="Enter Username">
+							<h5>Password</h5>
+							<input type="text" name="" placeholder="Enter Password">
+							<input type="submit" name="" value="Register">
+						</form>
+                        <p>Thank you for being a part of us!</p>
+					</div>
+		</div>
+		<footer id="footer">
+			
+		<div class="images">
+			<a href="https://t.me/Mark0_0"><img src="{%static './images/telegram.png' %}" alt=""></a>
+			<a href="https://www.facebook.com/profile.php?id=100008011452308"><img src="{%static './images/facebook.png' %}" alt=""></a>
+			<a href="https://www.instagram.com/0_0mark0_0/?hl=uk"><img src="{%static './images/insta.png' %}" alt=""></a>
+		</div>
+		<div class="credits">
+			<p>©Marko Burak</p>
+		</div>
+	
+		</footer>
+	  </div>
+
+	
+</body>
+
+</html>
