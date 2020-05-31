@@ -1,0 +1,112 @@
+$orangecolor: rgb(255, 152, 16);
+$bluecolor:hsl(233, 23%, 16%);
+@import "./head";
+@import "./regulations";
+
+@mixin flexCenter {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+
+body{
+    
+    background: $bluecolor !important;
+    .contactbox{
+        width: 320px;
+        height: 420px;
+        background: #000000;
+        color: #ffffff;
+        top: 50%;
+        left:50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+        
+
+
+        h1{
+            border-bottom: 2px solid $orangecolor;
+            padding: 3px;
+        }
+
+        h3{
+            border-bottom: 1px solid $orangecolor;
+            color:$orangecolor;
+            &:hover{
+                background: grey;
+                color: honeydew;
+            }
+        }   
+        
+        a{
+            
+            img{
+                padding: 5px;
+                border: 1px solid $orangecolor;
+                width: 50px;
+                margin: 20px;
+            }
+        }
+        .im_cen{
+            left: 35%;
+            position: absolute;
+            top: 40%;
+        }
+      
+    }
+    .avatar{
+        width: 130px;
+        position: absolute;
+        top: -50px;
+        left: calc(30% );
+    }
+    h1{
+        margin: 0;
+        padding:0 0 20px;
+        text-align: center;
+        font-size: 22px ;
+    }
+
+
+
+    #page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+      
+    #content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+    }
+      
+    #footer {
+        position: absolute;
+        bottom: -100px;
+        width: 100%;
+        height: 14%;            /* Footer height */
+        background: black !important;
+        .images{
+            img{
+                width: 35px;
+                margin: 12px;
+                
+            }
+            @include flexCenter();
+            
+        }
+        .credits{
+            @include flexCenter();
+            color: rgb(255, 255, 255);
+        }
+    
+    }
+    
+}		
+
+
+    
+    
+    

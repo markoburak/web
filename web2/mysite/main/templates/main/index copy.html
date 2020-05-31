@@ -1,0 +1,118 @@
+{% extends 'main/wrapper.html' %}
+
+{% block content %}
+<header>
+	{% load static %}
+	<div class="container">
+		<ul>
+				<li><img src="{%static './images/cart.png' %}" class="cart"></li>
+				<li><img src="{%static './images/laptoplogo.png' %}" class="logo" alt="laptop"></li>
+				<li><b/>Home</li>
+				<li><a href="login/"><b/>Login</a></li>
+				<li><a href="contact/"><b/>Contact</a></li>
+				<li><a href="signup/" class="btn"><span>Sign up</span></a></li>
+		</ul>
+	</div>
+	</div>
+</header>
+<body>
+	<div class="products">
+
+		<div class="inline">
+
+			<div class="item">
+
+<!--				<h1>Samsung s10+</h1>-->
+<!--				{{id1.good_name}}-->
+				<h1 id="name1"></h1>
+<!--				screen: {{id1prop.screen}}-->
+				<p id="screen1"><nobr></nobr></p>
+<!--				cpu: {{id1prop.cpu}}-->
+				<p id="cpu1"></p>
+<!--				battery: {{id1prop.battery}}-->
+				<p id="battery1"></p>
+					<div class="prod_img">
+
+<!--'/static{{id1.image}}'-->
+						<img id="img1" src='' alt="no">
+
+					</div>
+<!--				{{id1price.price_sell}}-->
+					<h4 id="price1" style="color: white;margin-top: 20px;padding: 10px; border-bottom: 2px solid black; text-align: center; background: rgba(18,18,29,0.41)"></h4>
+					<a id="link1" href=""><button id="but1" type="button" class="btn btn-warning">buy</button></a>
+			</div>
+			<div class="item">
+<!--				<h1>Samsung s10</h1>-->
+<!--				{{id2.good_name}}-->
+				<h1 id="name2"></h1>
+<!--				screen: {{id2prop.screen}}-->
+				<p id="screen2"></p>
+<!--				cpu: {{id2prop.cpu}}-->
+				<p id="cpu2"></p>
+<!--				battery: {{id2prop.battery}}-->
+				<p id="battery2"></p>
+
+					<div class="prod_img">
+<!--						'/static{{id2.image}}'-->
+						<img id="img2" src='' alt="no">
+
+					</div>
+<!--				{{id2price.price_sell}} ₴-->
+					<h4 id="price2" style="color: white;margin-top: 20px;padding: 10px; border-bottom: 2px solid black; text-align: center; background: rgba(18,18,29,0.41)"></h4>
+<!--					cart/id/{{id2.id}}/-->
+				<a id="link2" href=""><button id="but2" type="button" class="btn btn-warning">buy</button></a>
+			</div>
+			<div class="item">
+<!--				{{id3.good_name}}-->
+				<h1 id="name3"></h1>
+<!--				screen: {{id3prop.screen}}-->
+				<p id="screen3"></p>
+<!--				cpu: {{id3prop.cpu}}-->
+				<p id="cpu3"></p>
+<!--				battery: {{id3prop.battery}}-->
+				<p id="battery3"></p>
+
+					<div class="prod_img">
+<!--						'/static{{id3.image}}'-->
+						<img id="img3" src='' alt="no">
+					</div>
+<!--				{{id3price.price_sell}} ₴-->
+					<h4 id="price3" style="color: white;margin-top: 20px;padding: 10px; border-bottom: 2px solid black; text-align: center; background: rgba(18,18,29,0.41)"></h4>
+<!--					"cart/id/{{id3.id}}/"-->
+				<a id="link3" href=""><button id="but3" type="button" class="btn btn-warning">buy</button></a>
+			</div>
+			<div class="item">
+<!--				{{id4.good_name}}-->
+				<h1 id="name4"></h1>
+<!--				screen: {{id4prop.screen}}-->
+				<p id="screen4"></p>
+<!--				cpu: {{id4prop.cpu}}-->
+				<p id="cpu4"></p>
+<!--				battery: {{id4prop.battery}}-->
+				<p id="battery4"></p>
+
+					<div class="prod_img">
+<!--						'/static{{id4.image}}'-->
+						<img id="img4" src='' alt="no">
+					</div>
+<!--				{{id4price.price_sell}} ₴-->
+					<h4 id="price4" style="color: white;margin-top: 20px;padding: 10px; border-bottom: 2px solid black; text-align: center; background: rgba(18,18,29,0.41)"></h4>
+<!--				cart/id/{{id4.id}}/	-->
+				<a id="link4" href=""><button id="but4" type="button"  class="btn btn-warning">buy</button></a>
+			</div>
+		</div>
+	</div>
+
+</body>
+<footer>
+	<div class="images">
+		<a href="https://t.me/Mark0_0"><img src="{%static './images/telegram.png' %}" alt=""></a>
+		<a href="https://www.facebook.com/profile.php?id=100008011452308"><img src="{%static './images/facebook.png' %}" alt=""></a>
+		<a href="https://www.instagram.com/0_0mark0_0/?hl=uk"><img src="{%static './images/insta.png' %}" alt=""></a>
+	</div>
+	<div class="credits">
+		<p>©Marko Burak</p>
+	</div>
+		 <script type="module" src="/static/js/index.js"></script>
+</footer>
+{% endblock %}

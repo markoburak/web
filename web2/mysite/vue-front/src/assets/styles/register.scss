@@ -1,0 +1,139 @@
+$orangecolor: rgb(255, 152, 16);
+$bluecolor:hsl(233, 23%, 16%);
+@import "./head";
+@import "./regulations";
+
+@mixin flexCenter {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+
+body{
+    
+    background: $bluecolor !important;
+    .loginbox{
+        width: 320px;
+        height: 420px;
+        background: #000000;
+        color: #ffffff;
+        top: 50%;
+        left:50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+        p{
+            margin: 0;
+            padding: 0;
+        
+        }
+        h5{
+            font-weight: bold;
+            margin:0;
+            padding: 0;
+        }
+        input{
+            width:100%;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"]{
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+
+        }
+        input[type="submit"]{
+            border:none;
+            outline: none;
+            height: 40px;
+            background: $orangecolor;
+            color:#fff;
+            font-size:18px;
+            border-radius: 20px;
+            &:hover{
+                cursor: pointer;
+                background: $bluecolor;
+                color: rgb(255, 255, 255);
+
+            }
+
+        }
+        a{
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 20px;
+            color: grey;
+            &:hover{
+                color: #ffc107;
+            }
+        }
+        p{
+            text-decoration: none;
+            background: #ffeded;  
+            text-align: center;
+            margin-top: 40px;
+            color: $bluecolor;
+          }
+    }
+    .avatar{
+        width: 100px;
+        height: 100px;
+
+        position: absolute;
+        top: -50px;
+        left: calc(35% );
+    }
+    h1{
+        margin: 0;
+        padding:0 0 20px;
+        text-align: center;
+        font-size: 22px ;
+    }
+    
+
+
+    #page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+      
+    #content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+    }
+      
+    #footer {
+        position: absolute;
+        bottom: -100px;
+        width: 100%;
+        height: 14%;            /* Footer height */
+        background: black !important;
+        .images{
+            img{
+                width: 35px;
+                margin: 12px;
+                
+            }
+            @include flexCenter();
+            
+        }
+        .credits{
+            @include flexCenter();
+            color: rgb(255, 255, 255);
+        }
+    
+    }
+    
+}		
+
+
+    
+    
+    
