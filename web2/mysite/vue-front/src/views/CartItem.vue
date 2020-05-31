@@ -1,7 +1,9 @@
 <template>
 
   <div>
+    
     <HeaderCartItem/>
+    
     	<div class="products">
 
 			<div class="inline1">
@@ -41,7 +43,8 @@ import HeaderCartItem from '@/components/headers/HeaderCartItem'
 export default {
     data() {
     return{
-        id: 0,
+      loading : true,
+      id: 0,
       names: [],
       prices: []
     }
@@ -59,8 +62,9 @@ export default {
     fetch('http://127.0.0.1:8000/main/prices/')
     .then((prices) => prices.json())
     .then((prices) => {
-       
       this.prices = prices;
+      this.loading = false;
+
     });
   },
     components: {

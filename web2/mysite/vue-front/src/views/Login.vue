@@ -1,14 +1,18 @@
 <template>
 
-  <div>
+  <div class=".page">
     <HeaderLogin/>
-    
-    <div id="page-container">
+    <Loader2 v-if="loader"/>
+    <div id="page-container" v-else>
 		<div id="content-wrap">
 				<div class="loginbox">
-						<img src="../assets/images/account.png" class="avatar">
-						<h1>Login Here</h1>
-						<form action="">
+          	<img src="../assets/images/account.png" class="avatar">
+            <div>
+            <h1 @click="show = !show">Login Here</h1>
+            </div>
+            <transition>
+              <div v-if="show">
+             <form action="">
 							<p>Username</p>
 							<input  type="text" name="" placeholder="Enter Username">
 							<p>Password</p>
@@ -16,8 +20,10 @@
 							<input type="submit" name="" value="Login">
 							<a href="../signup">Register</a><br>
 						</form>
-				
-					</div>
+              </div>
+            </transition>
+            
+				</div>
 		</div>
     </div>
     <Footer/>
@@ -25,10 +31,24 @@
 </template>
 
 <script>
+import Loader2 from '@/components/Loader2'
 import HeaderLogin from '@/components/headers/HeaderLogin'
 import Footer from '@/components/Footer'
 export default {
+  data() {
+    return{
+      show:false,
+      loader : true
+    }
+  },
+  mounted() {
+    setTimeout(() =>{
+      this.loader = false;
+    },500)
+    
+  },
   components: {
+    Loader2,
     HeaderLogin,
     Footer,
   }
@@ -37,6 +57,32 @@ export default {
 
 <style>
 
+.v-enter-active {
+  animation: bounceIn 2s;
+}
+.v-leave-active{
+  animation: bounceIn 2s reverse;
+}
+
+@keyframes bounceIn{
+  0%{
+    transform: scale(0.1);
+    opacity: 0;
+    }
+  60%{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100%{
+    transform:(1);
+
+  }
+}
+
+.page{
+  position: fixed;
+  width: inherit;
+}
 @media only screen and (min-width: 600px) {
   .contactbox {
     display: inline;

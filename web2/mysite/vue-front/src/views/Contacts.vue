@@ -2,7 +2,8 @@
 
   <div>
     <HeaderContact/>
-    
+    <Loader3 v-if="load"/>
+    <div v-else>
     <div id="page-container">
 		<div id="content-wrap">
 				<div class="contactbox">
@@ -18,15 +19,29 @@
 		</div>
     </div>
     <Footer/>
+    </div>
   </div>
 </template>
 
 <script>
+import Loader3 from '@/components/Loader3'
 import HeaderContact from '@/components/headers/HeaderContact'
 import Footer from '@/components/Footer'
 export default {
+    data() {
+    return{
+      load : true
+    }
+  },
+  mounted() {
+    setTimeout(() =>{
+      this.load = false;
+    },2000)
+    
+  },
   components: {
     // HelloWorld
+    Loader3,
     HeaderContact,
     Footer,
   }
